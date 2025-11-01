@@ -1,0 +1,27 @@
+﻿services:
+  - type: web
+    name: stock-sight-telegram-bot
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python web8.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: SUBSCRIBE_URL
+        sync: false
+      - key: GOOGLE_SHEETS_ENABLED
+        value: "true"
+      - key: GOOGLE_CREDENTIALS_JSON
+        sync: false
+      - key: GOOGLE_SHEET_NAME
+        value: "StockSight-Subscriptions"
+      - key: GOOGLE_WORKSHEET_NAME
+        value: "Users"
+      - key: PORT
+        value: "8080"
+    healthCheckPath: /health
+    autoDeploy: true
