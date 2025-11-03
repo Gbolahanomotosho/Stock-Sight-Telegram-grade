@@ -1,0 +1,73 @@
+﻿Required API Keys for Deployment
+Create a .env file with these APIs:
+# ==============================================
+# SENTIMENT ANALYSIS APIS (Required)
+# ==============================================
+
+# NewsAPI - News sentiment analysis
+# Get free key: https://newsapi.org/register
+# Free tier: 100 requests/day
+NEWSAPI_API_KEY=your_newsapi_key_here
+
+# Alpha Vantage - News & sentiment (Optional but recommended)
+# Get free key: https://www.alphavantage.co/support/#api-key
+# Free tier: 5 API calls/minute, 500/day
+ALPHAVANTAGE_API_KEY=your_alphavantage_key_here
+
+# ==============================================
+# MARKET DATA APIS (Choose at least 2)
+# ==============================================
+
+# Polygon.io - Stock/Forex/Crypto data
+# Get free key: https://polygon.io/
+# Free tier: 5 calls/minute
+POLYGON_API_KEY=your_polygon_key_here
+
+# Twelve Data - Multi-asset data
+# Get free key: https://twelvedata.com/
+# Free tier: 8 calls/minute, 800/day
+TWELVEDATA_API_KEY=your_twelvedata_key_here
+
+# Finnhub - Stock/Forex/Crypto
+# Get free key: https://finnhub.io/register
+# Free tier: 60 calls/minute
+FINNHUB_API_KEY=your_finnhub_key_here
+
+# Finage - Multi-asset data
+# Get free key: https://finage.co.uk/
+# Free tier: 10 calls/minute
+FINAGE_API_KEY=your_finage_key_here
+
+# Marketstack - Stock data
+# Get free key: https://marketstack.com/
+# Free tier: 100 calls/month
+MARKETSTACK_API_KEY=your_marketstack_key_here
+
+# ==============================================
+# DATABASE (Required for production)
+# ==============================================
+
+# PostgreSQL recommended for production
+DATABASE_URL=postgresql://user:password@localhost:5432/trading_db
+
+# Or SQLite for development (default)
+# DATABASE_URL=sqlite:///./ultimate_trading_system.db
+
+# ==============================================
+# OPTIONAL APIS (Enhanced features)
+# ==============================================
+
+# Twitter API - Social sentiment (Advanced)
+TWITTER_BEARER_TOKEN=your_twitter_bearer_token
+
+# Reddit API - Social sentiment
+REDDIT_CLIENT_ID=your_reddit_client_id
+REDDIT_CLIENT_SECRET=your_reddit_client_secret
+
+# SendGrid - Email alerts
+SENDGRID_API_KEY=your_sendgrid_key
+
+# Twilio - SMS alerts
+TWILIO_ACCOUNT_SID=your_twilio_sid
+TWILIO_AUTH_TOKEN=your_twilio_token
+TWILIO_PHONE_NUMBER=+1234567890
