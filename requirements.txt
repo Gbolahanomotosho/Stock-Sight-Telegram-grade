@@ -29,3 +29,7 @@ google-auth-httplib2==0.1.1
 # Additional utilities
 pytz==2023.3
 tzdata==2023.3
+textblob==0.17.1
+vaderSentiment==3.3.2
+transformers==4.31.0
+lxml==4.9.3
