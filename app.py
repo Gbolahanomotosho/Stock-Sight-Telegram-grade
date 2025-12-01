@@ -432,7 +432,7 @@ if __name__ == "__main__":
     time.sleep(3)
     
     # Start Flask server
-    port = int(os.environ.get("PORT", 8080))
+    port = int(os.environ.get("PORT", 7860))
     host = "0.0.0.0"
     
     logger.info(f"Starting Flask server on {host}:{port}")
